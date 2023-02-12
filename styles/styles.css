@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Farro';
+    src: url('../fonts/Farro-Regular.woff2') format('woff2'),
+    url('../fonts/Farro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Francois One';
+    src: url('../fonts/FrancoisOne-Regular.woff2') format('woff2'),
+    url('../fonts/FrancoisOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PTSans-Regular.woff2') format('woff2'),
+    url('../fonts/PTSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+
+    max-width: 1230px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*header start*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    background: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.sticky{
+    display: grid;
+    grid-template-columns: 385px 785px;
+    grid-gap: 30px;
+    align-items: start;
+}
+.left-panel{
+    position: sticky;
+    top: 100px;
+    width: 385px;
+
+    font-family: 'Francois One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+aside li{
+    padding-top: 80px;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+.lang-pages{
+    padding-right: 20px;
+    font: 22px "Tourney-600"
+}
+header ul{
+    display: flex;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+}
+.header_li:not(:last-child):after{
+    content: '/';
+    padding:0 10px;
+}
+.left-panel__ul a:after{
+    content:'';
+    height: 2px;
+    display: block;
+    width: 100%;
+    background-color: black;
+}
+main{
+    background-image: url("../images/bg-picture.png");
+    /*background-image: url(images/);*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: right;
+    background-position-y: 120px;
+}
+.all-section{
+    margin-top: 70px;
+}
+/*header and*/
+.spanbgcolors{
+    background: silver;
+}
+.title-div{
+    display: flex;
+}
+h2{
+    font-family: 'Francois One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    /* identical to box height, or 133% */
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+h2:before{
+    content: '';
+    height: 8px;
+    display: block;
+    width: 100px;
+    background-color: black;
+}
+.miniwords{
+    font-family: 'Farro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+}
+p {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    padding-bottom: 40px;
+}
